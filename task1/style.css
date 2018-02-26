@@ -1,103 +1,42 @@
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-	font-family: sans-serif;
-	line-height: 1.6em;
-	padding-bottom: 400px;
+  font-family: sans-serif;
+  line-height: 1.6em;
+  padding-bottom: 400px;
 }
 
 .subtask {
-	margin: 20px 0;
-	border: 1px solid lightblue;
-	border-radius: 8px;
-	padding: 16px;
+  margin: 20px 0;
+  border: 1px solid lightblue;
+  border-radius: 8px;
+  padding: 16px;
 }
 
 ul {
-	padding: 0;
-	margin: 0;
-	font-family: sans-serif;
-	color: white;
-	display: flex;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  color: white;
+  display: flex;
 }
 
 ul > li {
-	list-style-type: none;
-	padding: 20px;
-	background-color: lightpink;
-	width: calc(100%/6);
+  list-style-type: none;
+  padding: 20px;
+  background-color: lightpink;
+  width: calc(100%/6);
 }
 
 ul > li img {
-	margin: 0 auto;
-	display: block;
+  margin: 0 auto;
+  display: block;
 }
 
 .clearfix {
-	clear: both;
+  clear: both;
 }
 
 /* Вашият CSS от тук надолу */
-
-@media screen and (max-width:830px;
-) body {
-	background-color: aqua;
-}
-
-img {
-	width: 130px;
-}
-
-}
-
-@media only screen and (min-width:560px) {
-	body {
-		background-color: red;
-	}
-
-	ul {
-		width: 100%
-	}
-
-
-}
-
-@media screen and (max-width:380px) {
-
-	body {
-		background-color: yellow;
-	}
-	ul {
-		flex-direction: column;
-		width: 100vh;
-		overflow-y: hidden;
-	}
-
-}
-
-
-#subtask2 li:nth-child(even) {
-	background: lightblue;
-}
-
-#subtask3 img:hover {
-	background-color: aqua;
-	transform: rotate(180deg);
-	transition: 2s;
-}
-
-#subtask4 li:last-of-type {
-	order: -1;
-}
-
-#subtask4 li:first-of-type {
-	order: 1;
-}
-
-#subtask5 li::after {
-	color: rgba(159, 157, 157, 0.05) content: "imaginethat";
-	position: absolute;
-
-}
